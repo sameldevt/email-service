@@ -1,4 +1,4 @@
-package br.com.samiac.emailservice.model.entity;
+package br.com.samiac.emailservice.model.entity.attachment;
 
 public interface Attachment {
 	byte[] parse();

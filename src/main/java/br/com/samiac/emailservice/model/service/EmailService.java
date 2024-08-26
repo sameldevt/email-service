@@ -2,7 +2,7 @@ package br.com.samiac.emailservice.model.service;
 
 import org.springframework.stereotype.Service;
 
-import br.com.samiac.emailservice.model.entity.Email;
+import br.com.samiac.emailservice.model.entity.email.Email;
 import br.com.samiac.emailservice.sender.Sender;
 
 @Service

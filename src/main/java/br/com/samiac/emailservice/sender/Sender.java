@@ -20,9 +20,8 @@ import javax.mail.internet.MimeMultipart;
 import javax.mail.util.ByteArrayDataSource;
 
 import br.com.samiac.emailservice.env.EnvLoader;
-import br.com.samiac.emailservice.model.entity.Attachment;
-import br.com.samiac.emailservice.model.entity.Email;
-import br.com.samiac.emailservice.model.entity.EmailBody;
+import br.com.samiac.emailservice.model.entity.attachment.Attachment;
+import br.com.samiac.emailservice.model.entity.email.Email;
 
 public class Sender {
 	private static final String SMTP_AUTH = "mail.smtp.auth";

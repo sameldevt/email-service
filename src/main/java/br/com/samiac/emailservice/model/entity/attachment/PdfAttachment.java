@@ -1,12 +1,12 @@
-package br.com.samiac.emailservice.model.entity;
+package br.com.samiac.emailservice.model.entity.attachment;
 
 import br.com.samiac.emailservice.pdf.PdfContent;
 import br.com.samiac.emailservice.pdf.PdfParser;
 
-public class PdfAttachment implements Attachment{
+public class PdfAttachment implements Attachment {
 	private final String CONTENT_TYPE = "application/pdf";
 	private PdfContent content;
-	
+
 	@Override
 	public byte[] parse() {
 		PdfParser parser = new PdfParser(content);
@@ -18,4 +18,7 @@ public class PdfAttachment implements Attachment{
 		return this.CONTENT_TYPE;
 	}
 
+	public void setContent(PdfContent content) {
+		this.content = content;
+	}
 }
